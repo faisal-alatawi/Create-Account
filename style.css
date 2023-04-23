@@ -1,0 +1,234 @@
+/* Add CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    border-radius: ;
+    height: 90vh;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.253) 0px 8px 24px;
+}
+
+
+.content {
+    background: rgb(110, 89, 206);
+    background: linear-gradient(142deg, rgba(110, 89, 206, 1) 0%, rgba(183, 143, 232, 1) 100%);
+    min-width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 7%;
+    border-radius: 10px 0 0 10px;
+    padding-left: 7%;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.content .box {
+    margin-bottom: 40px;
+}
+
+.content .box span i {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0.356);
+}
+
+.content .box h2 {
+    margin: 10px 0;
+    font-size: 1.30rem;
+}
+
+.content .box p {
+    width: 228px;
+    font-size: 16px;
+}
+
+
+
+
+/* log-in */
+.log-in {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-direction: column;
+    text-align: left;
+}
+
+.log-in h1 {
+    font-size: 30px;
+    text-align: left;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+form {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form input {
+    border: #9e9e9e91 solid 1px;
+    width: 100%;
+    padding-left: 10px;
+    padding-block: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+
+form input:focus {
+    border: #6e59ce solid 1px;
+}
+
+form label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.checkbox input {
+    width: fit-content;
+    margin: 0% 10px 0 0;
+    font-weight: 300;
+    opacity: .5;
+    accent-color: #7961d1;
+    transition: .4s;
+}
+
+input:focus {
+    outline: #6e59ce;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 20px;
+}
+
+.checkbox label {
+    font-size: 15px;
+    opacity: 0.6;
+    font-weight: 600;
+    text-transform: inherit;
+}
+
+.log-in button {
+    all: unset;
+    background-color: #6e59ce;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.log-in a {
+    color: aliceblue;
+    margin-top: 36px;
+}
+
+.log-in a:hover {
+    opacity: .9;
+
+}
+
+@media (max-width: 1024px) {
+
+    .content {
+        width: 72%;
+        justify-content: center;
+    }
+
+    .log-in {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 790px) {
+    .container {
+        flex-direction: column;
+        height: 1200px;
+        max-width: 82%;
+
+    }
+
+    .content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 11%;
+        border-radius: 10px 10px 0px 0px;
+        padding-left: 0;
+
+    }
+
+    .box {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .log-in {
+        width: 100%;
+        padding-top: 30px;
+        justify-content: normal;
+    }
+
+}
+
+@media (max-width: 494px) {
+    .container {
+        flex-direction: column;
+        height: 1300px;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0px;
+
+    }
+
+    .content {
+        border-radius: 0px;
+    }
+
+    .box {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .log-in {
+        width: 100%;
+    }
+
+    .log-in h1 {
+        font-size: 24px;
+    }
+
+}
